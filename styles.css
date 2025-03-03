@@ -1,1 +1,109 @@
-/* your code here */
+footer {
+  background: #111;
+  color: white;
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+}
+
+footer .content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+footer .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .logo-details .logo_name {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left:35px
+}
+
+footer .media-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+footer .media-icons a:hover {
+  color: #f00;
+}
+
+/* Link Sections */
+footer .link-boxes {
+  display: flex;
+justify-content:default;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+footer .link-boxes .box {
+  list-style: none;
+  width: 23%;
+  min-width: 100px;
+}
+
+footer .link-boxes .box .link_name {
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+}
+
+footer .link-boxes .box a {
+  color: #bbb;
+  text-decoration: none;
+  display: block;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+footer .link-boxes .box a:hover {
+  color: white;
+}
+
+/* Bottom Section */
+footer .bottom-details {
+  margin-top: 20px;
+  text-align: center;
+  padding-top: 10px;
+  border-top: 1px solid #444;
+}
+
+footer .bottom-details a {
+  color: #bbb;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+footer .bottom-details a:hover {
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  footer .top {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer .media-icons {
+    margin-top: 10px;
+  }
+
+  footer .link-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .link-boxes .box {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
